@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Página de Login</title>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Bem-vindo!</h1>
+        <form id="login-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+
+            <label for="ci">C.I:</label>
+            <input type="text" id="ci" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" required>
+
+            <button type="submit">Consulta</button>
+        </form>
+        <p id="esqueci-ci">Esqueci meu C.I</p>
+        <div id="dados-pessoais" style="display: none;">
+            <h2>Dados Pessoais</h2>
+            <p id="nome-pessoa"></p>
+            <p id="idade-pessoa"></p>
+            <p id="amigo"></p>
+            <p>Foguinho: <span id="foguinho"></span></p>
+            <p>C.I: <span id="ci-pessoa"></span></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
